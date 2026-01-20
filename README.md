@@ -1,12 +1,4 @@
-# Longevity Data Analysis Toolkit 🧬
-
-## Overview
-This repository contains Python scripts developed to analyze biological data related to stem cell aging and regeneration. The tools simplify data processing for bioinformatics tasks.
-
-## Key Features
-- **Data Parsing:** Automates the extraction of genetic markers from raw datasets.
-- **Visualization:** Generates graphs comparing cell metabolic states (using Matplotlib/Seaborn).
-- **Automation:** Reduces manual data entry time by 40%.
+1. chart 
 
 ## Technologies Used
 - Python 3.9
