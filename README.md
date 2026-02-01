@@ -1,37 +1,23 @@
-1. chart 
-import numpy as np
-import IPython.display as display
-from matplotlib import pyplot as plt
-import io
-import base64
+# Stem Cell Signal Analysis 🧬
 
-ys = 200 + np.random.randn(100)
-x = [x for x in range(len(ys))]
+A computational biology script designed to simulate and visualize biological signal markers (e.g., stem cell aging indicators or stress responses). The tool generates synthetic time-series data and highlights threshold anomalies using statistical filtering.
 
-fig = plt.figure(figsize=(4, 3), facecolor='w')
-plt.plot(x, ys, '-')
-plt.fill_between(x, ys, 195, where=(ys > 195), facecolor='g', alpha=0.6)
-plt.title("Sample Visualization", fontsize=10)
+## 📊 Overview
+This project demonstrates the application of Python in **Bioinformatics** for processing experimental data. It simulates noisy biological signals and automatically detects high-intensity events that correlate with cellular stress or aging markers.
 
-data = io.BytesIO()
-plt.savefig(data)
-image = F"data:image/png;base64,{base64.b64encode(data.getvalue()).decode()}"
-alt = "Sample Visualization"
-display.display(display.Markdown(F"![{alt}]({image})"))
-plt.close(fig)
+## 🚀 Key Features
+* **Synthetic Data Generation:** Simulates biological time-series data using NumPy normal distribution.
+* **Threshold Detection:** Automatically highlights data points exceeding safety baselines (mimicking outlier detection in lab samples).
+* **Data Visualization:** Uses Matplotlib to render publication-ready charts.
 
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/2b032e96-9eaa-4adf-b56c-4b2c62c471ac" />
+## 🛠️ Technologies Used
+* **Python 3.9+**
+* **NumPy** (Numerical computing & Matrix operations)
+* **Matplotlib** (Scientific Visualization)
+* **Pandas** (Data structures)
 
-## Technologies Used
-- Python 3.9
-- Pandas & NumPy
-- BioPython
+## 💻 Usage
 
-## Usage
-To run the analysis script:
-```bash
-python data_analysis.py --input data.csv
-
-
-Contact
-Roman Lupashin - [[LinkedIn Profile Link](https://www.linkedin.com/in/roman-lupashin-4885a9330/)]
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
